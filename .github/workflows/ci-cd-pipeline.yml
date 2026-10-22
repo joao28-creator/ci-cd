@@ -1,4 +1,4 @@
-//YML
+//YML corrigido
 name: CI/CD Pipeline Local
  
 on:
@@ -22,4 +22,5 @@ jobs:
         run: npm install
  
       - name: Run tests
-        run: npm test
+        run: node ./node_modules/jest/bin/jest.js
+ 
